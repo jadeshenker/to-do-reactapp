@@ -31,6 +31,8 @@ code {
   color: hsl(252, 6%, 33%);
   font-family: 'Muli', sans-serif;
 
+  margin-left: 0.6rem;
+
   background-image: linear-gradient(to right,#FEFFBE 100%,#fff 0);
   background-position: 0 110%;
   background-repeat: repeat-x;
