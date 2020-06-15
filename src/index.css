@@ -11,16 +11,13 @@ code {
     monospace;
 }
 
-.logo {
-  padding: 3rem;
-  -webkit-transition: -webkit-transform .4s ease-in-out;
-    transition:         transform .4s ease-in-out;
-
+p, h1, h2, h3 {
+  font-family: 'Muli', sans-serif;
 }
-
-.logo:hover {
-  -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+.title-wrapper {
+  margin: 3rem;
+  font-size: 3.3rem;
+  font-weight: 200;
 }
 
 .date-wrapper {
@@ -30,9 +27,8 @@ code {
 .date-info {
   color: hsl(252, 6%, 33%);
   font-family: 'Muli', sans-serif;
-
+  
   margin-left: 0.6rem;
-
   background-image: linear-gradient(to right,#FEFFBE 100%,#fff 0);
   background-position: 0 110%;
   background-repeat: repeat-x;
@@ -50,30 +46,55 @@ code {
 }
 
 .todo-card-title {
-  font-size: 1.5rem;
+  font-weight: 300;
+  font-size: 1.6rem;
   font-family: 'Muli', sans-serif;
   color: hsl(252, 6%, 33%);
-  font-weight: 700;
 }
 
 .task-wrapper {
   background-color: hsl(104, 84%, 90%);
 }
 
-.task-item {
+.completed-wrapper {
+  background-color: hsl(254, 100%, 97%);
+}
+
+.completed-wrapper i {
+  padding-right: 1rem;
+  color: hsl(246, 5%, 58%);
+}
+
+.completed-item {
   padding-left: 1rem;
   float: left;
+  text-decoration: line-through;
+  color: hsl(246, 5%, 58%);
+  font-family: 'Muli', sans-serif;
+  font-size: 1.1rem;
+  text-align: left;
+}
 
+.task-item {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  float: left;
+  line-height: 0.8rem;
   color: hsl(252, 6%, 33%);
   font-family: 'Muli', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: left;
+}
+.time-elapsed {
+  font-size: 0.9rem;
 }
 
 .delete-btn {
   border-radius: 10px;
-  padding-right: 1rem;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
   float: right;
+  font-family: 'Muli', sans-serif;
 }
 
 .delete-btn-text {

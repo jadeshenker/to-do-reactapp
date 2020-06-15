@@ -3,7 +3,7 @@ import Todo from './Todo';
 
 function TodoList(props) {
     const todos=props.tasks.map((todo, index) => {
-        return <Todo content={todo} key={index} id={index} onDelete={props.onDelete} />
+        return <Todo todo={todo} key={index} id={index} onDelete={props.onDelete} onComplete={props.onComplete} dateDisplay={props.dateDisplay}/>
     })
 
     return(

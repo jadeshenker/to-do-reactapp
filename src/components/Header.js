@@ -11,7 +11,7 @@ function Header(props)
     return(
         <div className="tasks-header">
             <div className="date-wrapper">
-                <i class="far fa-clock"></i>
+                <i className="far fa-clock"></i>
                 <b className="date-info">{date}</b>
             </div>
             <h1 className="todo-card-title">today's tasks ({props.numTodos})</h1>

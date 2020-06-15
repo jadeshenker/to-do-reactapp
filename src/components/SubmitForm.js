@@ -12,7 +12,6 @@ class SubmitForm extends React.Component {
     }
 
     handleChange = (e) => {
-        console.log(e.target.value);
         this.setState({input: e.target.value})
     }
 
@@ -20,7 +19,7 @@ class SubmitForm extends React.Component {
         return(
             <Form onSubmit={this.handleSubmit}>
                 <Form.Group>
-                    <Form.Control id="task" className="form-text" name="task" type="text" placeholder="add a new task here" value={this.state.input} onChange={this.handleChange} />
+                    <Form.Control id="task" className="form-text" name="task" type="text" placeholder="new task" value={this.state.input} onChange={this.handleChange} />
                 </Form.Group>
                 <Button className="inline-block form-text" variant="dark" type="submit">add</Button>
             </Form>

@@ -6,7 +6,6 @@ import Nav from './containers/Nav';
 function App() {
   return (
     <div className="App">
-      <Nav />
       <MainContainer />
     </div>
   );
